@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_nav_dashboard"
+            android:title="@string/home"/>
+    </group>
+
+
+    <item android:title="@string/history">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_soil"
+                    android:icon="@drawable/ic_nav_soil"
+                    android:title="@string/soilEn"/>
+                <item
+                    android:id="@+id/nav_temp"
+                    android:icon="@drawable/ic_nav_temp"
+                    android:title="@string/tempEn"/>
+                <item
+                    android:id="@+id/nav_water_rw"
+                    android:icon="@drawable/ic_nav_water"
+                    android:title="@string/water"/>
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="@string/watering">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_relay"
+                    android:icon="@drawable/ic_nav_relay"
+                    android:title="Automatic"/>
+                <item
+                    android:id="@+id/nav_water"
+                    android:icon="@drawable/ic_nav_watering"
+                    android:title="Manual"/>
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "888358090550",
+    "firebase_url": "https://siram-project3.firebaseio.com",
+    "project_id": "siram-project3",
+    "storage_bucket": "siram-project3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888358090550:android:6a38cae8ac1ef50dcee597",
+        "android_client_info": {
+          "package_name": "com.project.ayosiram3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888358090550-i9dg2s2gv4bid30ssqfebsqjhvtds1b4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.ayosiram3",
+            "certificate_hash": "028d438ded82c58dcd9ffb1369dff7341b958b9c"
+          }
+        },
+        {
+          "client_id": "888358090550-qu5mtfg1gthpj73m79kqhve70vqrdr7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOOxF5lAg18O1vOQ5ah8PSyXh_Mzqqwk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888358090550-qu5mtfg1gthpj73m79kqhve70vqrdr7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

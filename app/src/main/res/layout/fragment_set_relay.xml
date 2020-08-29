@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#388E3C"
+    android:orientation="vertical"
+    tools:context=".SetRelayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#388E3C"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#000000"
+                android:padding="1dp"
+                android:src="@drawable/icon_relay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/setting"
+                    android:textColor="#C8E6C9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Auto Watering"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_rl_ic1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/auto"
+                    android:src="@drawable/ic_relay_auto" />
+
+                <TextView
+                    android:id="@+id/tv_rl_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic1"
+                    android:text="@string/auto"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl_content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_title1"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic1"
+                    android:text="@string/relay_auto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_rl_content12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_content1"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic1"
+                    android:text="Next Watering: "
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_rl_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_content1"
+                    android:layout_toEndOf="@+id/tv_rl_content12"
+                    android:text="@string/nol"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_rl_click1"
+                    android:background="@drawable/ripple_text_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/change"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_rl_ic2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/auto"
+                    android:src="@drawable/ic_relay_water" />
+
+                <TextView
+                    android:id="@+id/tv_rl_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic2"
+                    android:text="@string/water_amount"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl_content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_title2"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic2"
+                    android:text="@string/water_amount2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_rl_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_content2"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic2"
+                    android:text="@string/nol"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/ripple_text_green"
+                    android:id="@+id/tv_rl_click2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/change"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_rl_ic3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/auto"
+                    android:src="@drawable/ic_relay_time" />
+
+                <TextView
+                    android:id="@+id/tv_rl_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic3"
+                    android:text="TIME 1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl_content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_title3"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic3"
+                    android:text="88:88"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_rl_disable_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_content3"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic3"
+                    android:background="@drawable/ripple_text_green"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="REMOVE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/ripple_text_green"
+                    android:id="@+id/tv_rl_click3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/change"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_rl_ic4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/auto"
+                    android:src="@drawable/ic_relay_time" />
+
+                <TextView
+                    android:id="@+id/tv_rl_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic4"
+                    android:text="TIME 2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl_content4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_title4"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic4"
+                    android:text="88:88"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_rl_disable_time2"
+                    android:background="@drawable/ripple_text_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rl_content4"
+                    android:clickable="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/iv_rl_ic4"
+                    android:textColor="@color/colorAccent"
+                    android:text="REMOVE"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:focusable="true" />
+
+                <TextView
+                    android:background="@drawable/ripple_text_green"
+                    android:id="@+id/tv_rl_click4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/change"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

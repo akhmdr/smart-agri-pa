@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#388E3C"
+    android:orientation="vertical"
+    tools:context=".riwayatSoil.RiwayatSoilFragment">
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#388E3C"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/icon_soil"
+                android:background="#000000"
+                android:padding="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/history"
+                    android:textStyle="bold"
+                    android:textColor="#C8E6C9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/soilEn"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_rect_2solid"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_rwSoil_second"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:layout_marginHorizontal="5dp"
+                android:text="M"
+                android:background="@drawable/ripple_bt_green"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/bt_rwSoil_hour"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:layout_marginHorizontal="5dp"
+                android:text="H"
+                android:background="@drawable/ripple_bt_green"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/bt_rwSoil_day"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:layout_marginHorizontal="5dp"
+                android:text="D"
+                android:background="@drawable/ripple_bt_green"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_rw_soil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

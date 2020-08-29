@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Ayo Siram 3</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_riwayat">RiwayatActivity</string>
+
+    <string name="water_amount">Water Amount</string>
+    <string name="water_amount2">Amount in Normal State is:</string>
+    <string name="relay_auto">The Relay is Automatic</string>
+    <string name="relay_auto2">Automatic Relay is Off</string>
+
+    <string name="soilId">  Lengas Tanah</string>
+    <string name="tempId">  Suhu Udara</string>
+    <string name="humidId"> Lembab Udara</string>
+    <string name="soilEn">  Soil Moisture</string>
+    <string name="tempEn">  Temperature</string>
+    <string name="humidEn"> Air Humidity</string>
+
+    <string name="detail">  Detail</string>
+    <string name="nan">     NaN</string>
+
+    <string name="cold">    Cold</string>
+    <string name="cool">    Cool</string>
+    <string name="normal">  Normal</string>
+    <string name="warm">    Warm</string>
+    <string name="hot">     Hot</string>
+
+    <string name="dry">     Dry</string>
+    <string name="humid2">  Humid</string>
+    <string name="wet">     Wet</string>
+
+
+    <string name="realtime">Realtime</string>
+    <string name="hari">    Hari</string>
+    <string name="jam">     Jam</string>
+    <string name="pekan">   Pekan</string>
+    <string name="strip">   --</string>
+
+    <string name="home">    Home</string>
+    <string name="history"> HISTORY</string>
+    <string name="other">   OTHER</string>
+    <string name="relay">   Relay</string>
+    <string name="notifikasi">Notification</string>
+    <string name="nol">     88.88%</string>
+    <string name="setting"> SETTING</string>
+    <string name="auto">    Auto</string>
+    <string name="change">  Change</string>
+    <string name="save">    Save</string>
+    <string name="amount">  Input the Amount of Water to Watering the Plant in Normal Conditions (ml):</string>
+    <string name="cancel">  Cancel</string>
+    <string name="input">   Input</string>
+    <string name="total">   Total</string>
+    <string name="water">   Water</string>
+    <string name="watering">Watering</string>
+    <string name="amount2"> Input Amount of Water:</string>
+</resources>

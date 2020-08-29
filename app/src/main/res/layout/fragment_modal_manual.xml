@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ModalManualFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount2"
+        android:textSize="18sp"
+        android:textColor="@color/primary_dark"/>
+
+    <EditText
+        android:id="@+id/et_dialog_man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input"
+        android:inputType="number"
+        android:autofillHints="0" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_save_man"
+            android:background="@drawable/ripple_text_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:clickable="true"
+            android:focusable="true" />
+        <TextView
+            android:id="@+id/tv_cancel_man"
+            android:background="@drawable/ripple_text_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:layout_toStartOf="@id/tv_save_man"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+</LinearLayout>
